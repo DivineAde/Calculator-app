@@ -1,0 +1,88 @@
+body{
+  background-color: rgb(22, 63, 248);
+}
+
+/* ========== CONTAINER =============*/
+
+.container{
+  background-color: #eeeeee;
+  max-width: 400px;
+  height: 550px;
+  border-radius: .5em;
+  margin: 0 auto;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*============ OUTPUT/SCREEN ============*/
+
+#display{
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.buttons > div{
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  /*box-shadow: 20px 20px 39px #bebebe, -20px -20px 39px #ffffff;*/
+}
+
+.button{
+  border: 0.5px solid #999;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.color-btn{
+  background-color: yellow;
+}
+
+#equal{
+  background-color: orange;
+}
+
+.button:hover{
+  color: #000;
+}
+
+.preloader{
+  background: rgb(41, 79, 248) url("/calculater.gif") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.preloader.display-none{
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(250, 69%, 61%);
+  z-index: -10;
+  color: #fff;
+  text-align: center;
+  line-height: 90vh;
+}
+/*           THANKS           */
